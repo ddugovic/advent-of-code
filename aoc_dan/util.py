@@ -107,9 +107,12 @@ def start():
         # from aoc_dan.stuff import *
         # import logging; logging.basicConfig(level=logging.DEBUG)
 
+        def solve():
+            print("part a:", )
+            print("part b:", )
 
-        print("part a:", )
-        print("part b:", )
+        if __name__ == "__main__":
+            solve()
     '''))
     test = here.parent / "tests" / str(year) / str(day).zfill(2) / "a.txt"
     if not test.exists():
