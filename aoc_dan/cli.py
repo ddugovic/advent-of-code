@@ -16,7 +16,7 @@ def run_one():
     parser = ArgumentParser(description=__doc__)
     aoc_now = datetime.now(tz=AOC_TZ)
     days = range(1, 26)
-    years = range(2015, aoc_now.year + int(aoc_now.month == 12))
+    years = range(2021, aoc_now.year + int(aoc_now.month == 12))
     parser.add_argument(
         "day",
         nargs="?",
@@ -29,7 +29,7 @@ def run_one():
         nargs="?",
         type=int,
         default=years[-1],
-        help="2015-%(default)s (default: %(default)s)",
+        help="2021-%(default)s (default: %(default)s)",
     )
     parser.add_argument("-d", "--data")
     log_levels = "DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"

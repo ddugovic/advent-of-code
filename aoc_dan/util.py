@@ -51,7 +51,7 @@ def set_docstrings(files=()):
 def start():
     """init a new source file at ./aocYYYY/qDD.py"""
     aoc_now = datetime.now(tz=AOC_TZ)
-    years = range(2015, aoc_now.year + int(aoc_now.month >= 11))
+    years = range(2021, aoc_now.year + int(aoc_now.month >= 11))
     days = range(1, 26)
     parser = argparse.ArgumentParser(description="init current day")
     parser.add_argument(
@@ -66,7 +66,7 @@ def start():
         nargs="?",
         type=int,
         default=years[-1],
-        help="2015-%(default)s (default: %(default)s)",
+        help="2021-%(default)s (default: %(default)s)",
     )
     parser.add_argument(
         "-f",

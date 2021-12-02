@@ -17,7 +17,7 @@ def pytest_addoption(parser):
 def pytest_configure(config):
     msg = """slow: marks tests as slow (deselect with '-m "not slow"')"""
     config.addinivalue_line("markers", msg)
-    for year in range(2015, datetime.date.today().year + 1):
+    for year in range(2021, datetime.date.today().year + 1):
         msg = f"y{year}: https://adventofcode.com/{year}"
         config.addinivalue_line("markers", msg)
     for day in range(1, 26):

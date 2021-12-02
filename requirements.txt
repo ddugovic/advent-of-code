@@ -1,0 +1,12 @@
+advent-of-code-data>=0.9.8
+anytree
+bidict
+numpy
+parse
+scipy
+sympy
+fields
+networkx
+wimpy
+marshmallow
+regex
